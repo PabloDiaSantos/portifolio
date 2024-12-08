@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulário de contato -->
+        <h1>Contato</h1>
+        <form id="meuFormulario">
+            <!-- Campos do formulário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Capturando o evento de envio do formulário
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            // Capturando os valores preenchidos no formulário
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const mensagem = document.getElementById("mensagem").value;
+            // Exibe um alerta de envio, a partir daqui eu posso escrever a lógica do que seria feito com o conteudo do fomulario
+            alert(`Dados enviados:\nNome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
+        });
+    </script>
+</body>
+</html>

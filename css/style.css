@@ -1,0 +1,64 @@
+/* Configuração geral do site */
+body {
+    font-family: Arial, sans-serif; /* Fonte limpa */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo claro */
+}
+
+/* Menu de navegação */
+header nav ul {
+    list-style: none; 
+    background-color: #333; /* Fundo escuro */
+    color: #fff;
+    text-align: center; /* Centraliza os itens */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline; /* Itens lado a lado */
+    padding: 20px; /* Espaçamento para os links */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none; /* Sem sublinhado */
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Destaca o link ao passar o mouse */
+}
+
+/* Área principal do conteúdo */
+main {
+    padding: 20px;
+}
+
+/* Rodapé fixo */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed; /* Sempre visível no final da página */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para a seção 'Sobre Mim' */
+.sobre-container {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+}
+
+/* Estilo para a foto de perfil */
+.foto-perfil {
+    width: 150px; /* Define a largura da foto */
+    height: 150px; /* Define a altura da foto */
+    border-radius: 50%; /* Torna a foto circular */
+    object-fit: cover; /* Ajusta o tamanho da imagem ao círculo */
+    border: 2px solid #333; /* Adiciona uma borda */
+    margin-top: 20px; /* Adiciona espaçamento entre o texto e a foto */
+}
